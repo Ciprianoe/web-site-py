@@ -25,12 +25,12 @@
   <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
       <div class="container-fluid ml-auto">
-        <img
-          src="../static/img/FOTO CIRCULO.png"
+      
+        <a class="navbar-brand" href="/"><img
+          src="../static/img/LogoTrianguloSinBG.png"
           alt="imagen"
-          style="width: 60px"
-        />
-        <a class="navbar-brand" href="/">Cipriano Escorche</a>
+          style="width: 200px"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,12 +51,19 @@
                 href="{{ url_for('home') }}"
                 >Home</a
               >
-            </li>
-            <li class="nav-item" id="Experiencia">
+            </li>        
+            <li class="nav-item" id="Aboutme">
               <a
                 class="nav-link {% if active == 'about' %}active{% endif %}"
                 href="{{url_for('about')}}"
-                >Experiencia</a
+                >Acerca de mi</a
+              >
+            </li>
+            <li class="nav-item" id="Cursos">
+              <a
+                class="nav-link {% if active == 'cursos' %}active{% endif %}"
+                href="{{url_for('cursos')}}"
+                >Cursos Gratuitos</a
               >
             </li>
             <li class="nav-item" id="proyectos">
@@ -86,16 +93,20 @@
           >
           &nbsp; Desarollado por Ing.Cipriano Escorche | Mis redes
           sociales  &nbsp;
-          <a href="https://github.com/ciprianoe" target="_blank"><i class="redes fab fa-github-square"></i><a/>&nbsp;    
-          <a href="https://www.linkedin.com/in/cipriano-e-67a789101/" target="_blank"><i class="redes fab fa-linkedin" ></i><a/>&nbsp;          
-          <a href="https://wa.me/+584242343497" target="_blank"> <i class="redes fab fa-whatsapp-square"></i><a/>
+          <div class="iconresponsive">
+          <a class="redesi" href="https://github.com/ciprianoe" target="_blank"><i class="redes fab fa-github-square"></i><a/>&nbsp;    
+          <a class="redesi" href="https://www.linkedin.com/in/cipriano-e-67a789101/"target="_blank"><i class="redes fab fa-linkedin" ></i><a/>&nbsp;          
+          <a class="redesi" href="https://wa.me/+584242343497" target="_blank"> <i class="redes fab fa-whatsapp-square"></i><a/>
+          </div>
           </span
         >
-        
+          
 
         {% endblock %}
       </footer>
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   </body>
 </html>
